@@ -5,6 +5,7 @@ const chatFormContainer = document.querySelector('.chat-form-container');
 const chatSideBar= document.querySelector(".chat-sidebar");
 const chatHeader = document.querySelector(".chat-header");
 const msg = document.getElementById("msg");
+const h1 = document.querySelector(".h1");
 
 button.addEventListener("click", ()=>{
     darkMode(bodyMessage,"dark");
@@ -14,6 +15,8 @@ button.addEventListener("click", ()=>{
     darkMode(chatHeader,"input-color");
     darkMode(msg,"input-color");
     darkMode(msg,"dark-color");
+    darkMode(chatSideBar,"dark-color");
+    darkMode(h1,"dark-color");
 });
 
 function darkMode(e,cl) {

@@ -10,15 +10,17 @@ const username = document.getElementById("username");
 const room = document.getElementById("room");
 
 indexButton.addEventListener("click", () => {
-    darkMode(glass,"dark-glass");//dark-glass
-    darkMode(indexBody,"dark");//dark
-    darkMode(joinBtn,"dark-btn");//dark-btn
-    darkMode(joinContainer,"dark-join-container");//dark-join-container
+    darkMode(glass,"dark-glass");
+    darkMode(indexBody,"dark");
+    darkMode(joinBtn,"dark-btn");
+    darkMode(joinContainer,"dark-join-container");
     darkMode(color, "dark-color");
-    darkMode(roomColor, "dark-color");//dark-color
-    darkMode(h1, "dark-color");//dark-color
-    darkMode(username,"input-color");//input-color
+    darkMode(roomColor, "dark-color");
+    darkMode(h1, "dark-color");
+    darkMode(username,"input-color");
     darkMode(room,"input-color");
+    darkMode(username,"dark-color");
+    darkMode(room,"dark-color");
 });
 
 function darkMode(e,cl) {
