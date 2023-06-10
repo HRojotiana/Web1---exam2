@@ -8,35 +8,41 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
 		integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="css/styles.css" />
-	<title>ChatCord App</title>
+	<title>Home</title>
 </head>
 
-<body>
+<body class="index-body">
 	<div class="glass">
 		<div class="join-container">
 			<header class="join-header">
-				<h1>VacelloChat</h1>
+				<h1 class="h1">VacelloChat
+					<button id="theme-btn-index"><ion-icon name="logo-ionitron"></ion-icon></button>
+				</h1>
 			</header>
 			<main class="join-main">
 				<form action="chat.html">
 					<div class="form-control">
-						<label for="username">Username</label>
-						<input type="text" name="username" id="username" placeholder="Enter username..." required />
+						<label for="username" class="color" >Username</label>
+						<input type="text" name="username"  id="username" placeholder="Enter username..." required />
 					</div>
 					<div class="form-control">
-						<label for="room">Room</label>
+						<label for="room" class="room-color">Room</label>
 						<select name="room" id="room">
-							<option value="Global Room">Global Room</option>
-							<option value="Party Room">Party Room</option>
-							<option value="Private Room">Private Room</option>
+							<option value="Global Room" class="option-color">Global Room</option>
+							<option value="Party Room" class="option-color">Party Room</option>
+							<option value="Private Room" class="option-color">Private Room</option>
 						</select>
 					</div>
-					<button type="submit" class="btn" id="join-btn">Join Chat</button>
+					<button type="submit" class="btn light-btn" id="join-btn">Join Chat</button>
 				</form>
 			</main>
 		</div>
 	</div>
 
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="js/index.js"></script>
+  
 </body>
 
 </html>
