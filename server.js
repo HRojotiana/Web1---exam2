@@ -11,7 +11,7 @@ const io = socketio(server);
 
 app.use(express.static(path.join(__dirname + '/public')));
 
-const botName = 'Chatroom bot';
+const botName = 'Vacello bot';
 
 io.on('connection', socket => {
     //listen to the event joinRoom
